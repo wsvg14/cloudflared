@@ -1,6 +1,6 @@
 VERSION=$(git describe --tags --always --dirty="-dev" --match "[0-9][0-9][0-9][0-9].*.*")
 echo $VERSION
-export CGO_ENABLED=0
+export CGO_ENABLED=1
 # This controls the directory the built artifacts go into
 export ARTIFACT_DIR=built_artifacts/
 mkdir -p $ARTIFACT_DIR
